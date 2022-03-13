@@ -1,5 +1,5 @@
 # MechaCar_Statistical_Analysis-
-Module 15 - Statistics and R
+### Module 15 - Statistics and R - Cheryl Berger
 
 ## Overview
 A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
@@ -80,8 +80,7 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 ![image](https://user-images.githubusercontent.com/94234511/158047190-b76cd3d5-4541-486e-8872-edc8b1dc8eea.png)
 
 #### The following PSI metrics for each lot: mean, median, variance, and standard deviation.
-*
-lot_summary dataframe should look like this:*
+*lot_summary dataframe should look like this:*
 ![image](https://user-images.githubusercontent.com/94234511/158047209-6da957dd-5d98-4b54-adfc-9352229116e2.png)
 
 ### Summary Statistics on Suspension Coils
