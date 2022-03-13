@@ -35,7 +35,7 @@ y = mx + b:
 mpg = (6.267)vehicle_length + (0.0012)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD + (-104.0)
 
 The p-value: 5.35e-11 is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null (H0) hypothesis, which further indcates that the slope of this linear model is not zero.
-![image](https://user-images.githubusercontent.com/94234511/158046006-6a501337-797a-489c-9d58-d5bc9f5778ae.png)
+![image](https://user-images.githubusercontent.com/94234511/158046625-8c6bcad3-d9de-4f63-96db-5ddcba4d2470.png)
 
 #### Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 This linear model has an r-squared value of 0.7149. Therefore, approximately 71% of all mileage predictions will be determined by this model. Although the dataset is fairly small, this multiple regression model predicts mileage (mpg) of MechaCar prototypes effectively.
