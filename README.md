@@ -139,8 +139,11 @@ The summary of an additional statistical study is described below.
 
 *What is the null hypothesis or alternative hypothesis?*
 
+null hypothesis or H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
+- The average fuel efficiency of the MechaCar is statistically similar to all other models in the same price range.
+
+alternative hypothesis or Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
 - On average the MechaCar has a 10% higher highway fuel efficiency than other models in the same price range ($19,000-$22,000)
-The average fuel efficiency of the MechaCar is statistically similar to all other models in the same price range.
 
 *What statistical test would you use to test the hypothesis? And why?*
 
