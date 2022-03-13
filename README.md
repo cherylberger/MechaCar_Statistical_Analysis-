@@ -8,10 +8,30 @@ Module 15 - Statistics and R
 Using your knowledge of R, you’ll design a linear model that predicts the mpg of MechaCar prototypes using several variables from the MechaCar_mpg.csv file. Then, you’ll write a short interpretation of the multiple linear regression results in the README.md.
 ### Linear Regression to Predict MPG
 
+![image](https://user-images.githubusercontent.com/94234511/158045755-c271e870-7404-4a91-9019-69db22931d16.png)
+
+
+![image](https://user-images.githubusercontent.com/94234511/158045789-01dc89cf-90b1-464d-9cc9-1ca67e0129a0.png)
+
 
 #### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+Judging by the Pr(\t\) values for Vehicle Length and Ground Clearance, these varaiables are statistically likely to provide a non-random amount of variance to the model for mpg in this dataset.  In other words, the probability is high that the vehicle length and vehicle ground clearance have a significant impact on miles per gallon on the MechaCar prototype. Conversely, the variables for Vehicle Weight, Spoiler Angle, and All Wheel Drive (AWD) have p-values of 0.078, 0.31 and 0.19 respectively, these are above the signifigance level of 0.05 which indicates a random amount of variance with the dataset.
+
+![image](https://user-images.githubusercontent.com/94234511/158045890-8ff94bc7-fc2e-47eb-adff-bb1e3faff54f.png)
+
 #### Is the slope of the linear model considered to be zero? Why or why not?
+
+If the values are expressed in standard notation, the equation for the linear model can be written as:
+y = mx + b:
+mpg = (6.267)vehicle_length + (0.0012)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD + (-104.0)
+
+The p-value: 5.35e-11 is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null (H0) hypothesis, which further indcates that the slope of this linear model is not zero.
+![image](https://user-images.githubusercontent.com/94234511/158046006-6a501337-797a-489c-9d58-d5bc9f5778ae.png)
+
 #### Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+This linear model has an r-squared value of 0.7149. Therefore, approximately 71% of all mileage predictions will be determined by this model. Although the dataset is fairly small, this multiple regression model predicts mileage (mpg) of MechaCar prototypes effectively.
+
+![image](https://user-images.githubusercontent.com/94234511/158045966-cd0b95f3-9b44-4f73-b644-d9787d85e1db.png)
 
 ### Deliverable 2: Create Visualizations for the Trip Analysis 
 The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
