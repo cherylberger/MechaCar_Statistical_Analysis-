@@ -53,18 +53,25 @@ This linear model has an r-squared value of 0.7149. Therefore, approximately 71%
 ### Deliverable 2: Create Visualizations for the Trip Analysis 
 The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
 
-#### The suspension coil’s PSI continuous variable across all manufacturing lots
-total_summary dataframe should look like this:
+![image](https://user-images.githubusercontent.com/94234511/158046916-32532c1b-e31f-4d95-92c0-a36863f4d4a4.png)
 
+
+#### The suspension coil’s PSI continuous variable across all manufacturing lots
+
+![image](https://user-images.githubusercontent.com/94234511/158047046-09cd014b-09f0-4f34-a2a6-e96967ce4d8b.png)
+
+total_summary dataframe should look like this:
+![image](https://user-images.githubusercontent.com/94234511/158047190-b76cd3d5-4541-486e-8872-edc8b1dc8eea.png)
 
 #### The following PSI metrics for each lot: mean, median, variance, and standard deviation.
 lot_summary dataframe should look like this:
-
+![image](https://user-images.githubusercontent.com/94234511/158047209-6da957dd-5d98-4b54-adfc-9352229116e2.png)
 
 ### Summary Statistics on Suspension Coils
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
+The variance of manufacturing lots 1 and 2 meet the design specification of a variance less than 100 psi.  However, the data for lot 3 shows some drift and the variance was 170.29 psi.  Therefore, lot 3 is out of specification.  Parts should be sequestered and a root cause investigation initiated.
 
 ### Deliverable 3: T-Tests on Suspension Coils
 perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
