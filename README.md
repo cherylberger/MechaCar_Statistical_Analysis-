@@ -5,17 +5,26 @@ Module 15 - Statistics and R
 
 ## Results
 ### Deliverable 1: Linear Regression to Predict MPG (30 points)
-Using your knowledge of R, you’ll design a linear model that predicts the mpg of MechaCar prototypes using several variables from the MechaCar_mpg.csv file. Then, you’ll write a short interpretation of the multiple linear regression results in the README.md.
+Using your knowledge of R, you’ll design a linear model that predicts the mileage (mpg) of MechaCar prototypes using several variables from the MechaCar_mpg.csv file. Then, you’ll write a short interpretation of the multiple linear regression results in the README.md.
 ### Linear Regression to Predict MPG
+
+#### Create a new Rscript file and name it MechaCarChallenge.R
+
+#### Install the required libraries
+library(dplyr)
+library(tidyverse)
+
+#### Load in the csv file from the correct directory and name the data mechaCar_mpg
+mechaCar_mpg <- read.csv(file="./Resources/MechaCar_mpg.csv", check.names =F, stringsAsFactors = F)
+#### lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mechaCar_mpg)
+#### summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mechaCar_mpg))
 
 ![image](https://user-images.githubusercontent.com/94234511/158045755-c271e870-7404-4a91-9019-69db22931d16.png)
 
-
 ![image](https://user-images.githubusercontent.com/94234511/158045789-01dc89cf-90b1-464d-9cc9-1ca67e0129a0.png)
 
-
 #### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Judging by the Pr(\t\) values for Vehicle Length and Ground Clearance, these varaiables are statistically likely to provide a non-random amount of variance to the model for mpg in this dataset.  In other words, the probability is high that the vehicle length and vehicle ground clearance have a significant impact on miles per gallon on the MechaCar prototype. Conversely, the variables for Vehicle Weight, Spoiler Angle, and All Wheel Drive (AWD) have p-values of 0.078, 0.31 and 0.19 respectively, these are above the signifigance level of 0.05 which indicates a random amount of variance with the dataset.
+Judging by the Pr(\t\) values for Vehicle Length and Ground Clearance, these varaiables are statistically likely to provide a non-random amount of variance to the model for mileage in this dataset.  In other words, the probability is high that the vehicle length and vehicle ground clearance have a significant impact on miles per gallon (mpg) achievable with the MechaCar prototype. Conversely, the variables for Vehicle Weight, Spoiler Angle, and All Wheel Drive (AWD) have p-values of 0.078, 0.31 and 0.19 respectively, these are above the signifigance level of 0.05 which indicates a random amount of variance with the dataset.
 
 ![image](https://user-images.githubusercontent.com/94234511/158045890-8ff94bc7-fc2e-47eb-adff-bb1e3faff54f.png)
 
