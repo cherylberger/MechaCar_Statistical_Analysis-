@@ -11,6 +11,11 @@ This project is intended to provide a few analysis using the production data to 
 * Run t-tests to determine if the manufacturing lots are statistically different from the mean population*
 * Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturer and provide a summary   interpretation of the findings.*
 
+Resources:
+
+Data files can be found here:
+https://github.com/cherylberger/MechaCar_Statistical_Analysis-/tree/main/Resources
+
 ## Results
 ### Deliverable 1: Linear Regression to Predict MPG (30 points)
 Using the statistical software R provided by AutosRUS, design a linear model that predicts the mileage (mpg) of MechaCar prototypes using several variables from the MechaCar_mpg.csv file. 
