@@ -26,15 +26,17 @@ mechaCar_mpg <- read.csv(file="./Resources/MechaCar_mpg.csv", check.names =F, st
 #### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 Judging by the Pr(\t\) values for Vehicle Length and Ground Clearance, these varaiables are statistically likely to provide a non-random amount of variance to the model for mileage in this dataset.  In other words, the probability is high that the vehicle length and vehicle ground clearance have a significant impact on miles per gallon (mpg) achievable with the MechaCar prototype. Conversely, the variables for Vehicle Weight, Spoiler Angle, and All Wheel Drive (AWD) have p-values of 0.078, 0.31 and 0.19 respectively, these are above the signifigance level of 0.05 which indicates a random amount of variance with the dataset.
 
-![image](https://user-images.githubusercontent.com/94234511/158045890-8ff94bc7-fc2e-47eb-adff-bb1e3faff54f.png)
+![image](https://user-images.githubusercontent.com/94234511/158046737-e74bb766-b605-4f50-8be2-a3006c922365.png)
 
 #### Is the slope of the linear model considered to be zero? Why or why not?
 
 If the values are expressed in standard notation, the equation for the linear model can be written as:
+
 y = mx + b:
 mpg = (6.267)vehicle_length + (0.0012)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD + (-104.0)
 
-The p-value: 5.35e-11 is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null (H0) hypothesis, which further indcates that the slope of this linear model is not zero.
+The p-value: 5.35e-11 is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null (H0) hypothesis, which further indicates that the slope of this linear model is not zero.
+
 ![image](https://user-images.githubusercontent.com/94234511/158046625-8c6bcad3-d9de-4f63-96db-5ddcba4d2470.png)
 
 #### Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
