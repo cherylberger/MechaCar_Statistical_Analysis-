@@ -73,6 +73,8 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 The variance of manufacturing lots 1 and 2 meet the design specification of a variance less than 100 psi.  However, the data for lot 3 shows some drift and the variance was 170.29 psi.  Therefore, lot 3 is out of specification.  Parts should be sequestered and a root cause investigation initiated.
 
+![image](https://user-images.githubusercontent.com/94234511/158047442-6f316441-2b1c-4a25-b1f8-101caa75c7ac.png)
+
 ### Deliverable 3: T-Tests on Suspension Coils
 perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
