@@ -16,8 +16,14 @@ library(tidyverse)
 
 #### Load in the csv file from the correct directory and name the data mechaCar_mpg
 mechaCar_mpg <- read.csv(file="./Resources/MechaCar_mpg.csv", check.names =F, stringsAsFactors = F)
-#### lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mechaCar_mpg)
-#### summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mechaCar_mpg))
+
+#### 
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mechaCar_mpg)
+
+#### 
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mechaCar_mpg))
+
+![image](https://user-images.githubusercontent.com/94234511/158046879-0e5380c9-1317-427e-92d3-b192f33b04ce.png)
 
 ![image](https://user-images.githubusercontent.com/94234511/158045755-c271e870-7404-4a91-9019-69db22931d16.png)
 
