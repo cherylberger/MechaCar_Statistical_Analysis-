@@ -82,7 +82,14 @@ perform t-tests to determine if all manufacturing lots and each lot individually
 
 #### In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
 
+![image](https://user-images.githubusercontent.com/94234511/158047538-70139f63-4c08-46ea-9340-62fdc337b9a1.png)
+t.test(mecha_coil$PSI,mu=1500)
+
 #### Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+
+lot1 <- subset(mecha_coil, Manufacturing_Lot=="Lot1")
+lot2 <- subset(mecha_coil, Manufacturing_Lot=="Lot2")
+lot3 <- subset(mecha_coil, Manufacturing_Lot=="Lot3")
 
 ### Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 
