@@ -91,6 +91,12 @@ lot1 <- subset(mecha_coil, Manufacturing_Lot=="Lot1")
 lot2 <- subset(mecha_coil, Manufacturing_Lot=="Lot2")
 lot3 <- subset(mecha_coil, Manufacturing_Lot=="Lot3")
 
+![image](https://user-images.githubusercontent.com/94234511/158047672-d343432d-4442-4158-a1af-1449f7e80fc0.png)
+
+![image](https://user-images.githubusercontent.com/94234511/158047695-5e62319f-5063-4426-8150-15b3988629be.png)
+
+![image](https://user-images.githubusercontent.com/94234511/158047711-5f7db020-dac9-4866-b764-4aa8a10bed67.png)
+
 ### Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 
 ### Study Design: MechaCar vs Competition
