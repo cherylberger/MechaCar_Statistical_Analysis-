@@ -83,7 +83,10 @@ perform t-tests to determine if all manufacturing lots and each lot individually
 #### In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
 
 ![image](https://user-images.githubusercontent.com/94234511/158047538-70139f63-4c08-46ea-9340-62fdc337b9a1.png)
+
 t.test(mecha_coil$PSI,mu=1500)
+
+The true mean of the sample is 1498.78, see also the summary statistics above. With a p-value of 0.06, which is higher than the significance level of 0.05, there is not enough evidence to support rejecting the null hypothesis. This analysis indicates that the mean of all three manufacturing lots is statistically similar to the presumed population mean of 1500 psi.
 
 #### Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
 
@@ -96,6 +99,12 @@ lot3 <- subset(mecha_coil, Manufacturing_Lot=="Lot3")
 ![image](https://user-images.githubusercontent.com/94234511/158047695-5e62319f-5063-4426-8150-15b3988629be.png)
 
 ![image](https://user-images.githubusercontent.com/94234511/158047711-5f7db020-dac9-4866-b764-4aa8a10bed67.png)
+
+A summary of the individual lot data can be seen below:
+
+Lot 1 sample actually has a true sample mean of 1500psi, again as we saw in the summary statistics above. With a p-value of 1, clearly we cannot reject the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean as both are equal to 1500psi.
+Lot 2 has essentially the same outcome with a sample mean of 1500.02, a p-value of 0.61; the null hypothesis cannot be rejected.  The sample mean and the population mean of 1500psi are statistically similar.
+However, the data for Lot 3 illustrates a different hypothesis.  Here the sample mean is 1496.14psi and the p-value is 0.04, which is lower than the stated significance level of 0.05. Therefore, we would reject the null hypothesis that the lot 3 sample mean and the presumed population mean are not statistically different.
 
 ### Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 
